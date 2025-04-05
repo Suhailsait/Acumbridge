@@ -5,6 +5,7 @@ import { useInView } from "framer-motion"
 import { motion } from "framer-motion"
 import { Shield, Bell, UserCheck } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
+import placeholder from '../assets/images/placeholder.svg'
 
 export default function Features() {
   const ref = useRef(null)
@@ -123,7 +124,7 @@ export default function Features() {
               className="relative h-[400px] rounded-lg overflow-hidden shadow-xl"
             >
               <img
-              src="src/assets/images/placeholder.svg" height="600" width="800"
+              src={placeholder} height="600" width="800"
               alt="Attendance tracking system"
                 className="w-full h-full object-cover"
               />

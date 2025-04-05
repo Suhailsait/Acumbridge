@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Button } from "./ui/button"
 import { motion } from "framer-motion"
+import placeholder from '../assets/images/placeholder.svg'
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -41,7 +42,7 @@ export default function Hero() {
           <div className="relative w-full h-full">
             {/* Use a static image as background instead of trying to play a video */}
             <img
-              src="src/assets/images/placeholder.svg" height="1080" width="1920"
+              src={placeholder} height="1080" width="1920"
               alt="Background"
               className="w-full h-full object-cover"
             />

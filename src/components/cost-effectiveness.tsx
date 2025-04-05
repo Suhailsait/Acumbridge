@@ -4,6 +4,7 @@ import { useRef } from "react"
 import { useInView } from "framer-motion"
 import { motion } from "framer-motion"
 import { DollarSign, BellOff, BarChart3 } from "lucide-react"
+import placeholder from '../assets/images/placeholder.svg'
 
 export default function CostEffectiveness() {
   const ref = useRef(null)
@@ -49,7 +50,7 @@ export default function CostEffectiveness() {
             className="relative h-[400px] rounded-lg overflow-hidden shadow-xl"
           >
             <img
-              src="src/assets/images/placeholder.svg" height="600" width="800"
+              src={placeholder} height="600" width="800"
               alt="Cost-effective surveillance solution"
               className="w-full h-full object-cover"
             />
