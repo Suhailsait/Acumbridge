@@ -9,19 +9,16 @@ export default function Hero() {
   const [videoError, setVideoError] = useState(false)
 
   useEffect(() => {
-    // Only try to play if video exists and browser supports autoplay
     const attemptAutoplay = async () => {
       if (videoRef.current) {
         try {
-          // Check if browser allows autoplay
-          const autoplayAllowed = await document.documentElement.requestFullscreen
-            .call(document.documentElement)
+          const autoplayAllowed = await document.documentElement.requestFullscreen()
             .then(() => {
               document.exitFullscreen()
               return true
             })
             .catch(() => false)
-
+  
           if (autoplayAllowed) {
             await videoRef.current.play()
           }
@@ -31,9 +28,9 @@ export default function Hero() {
         }
       }
     }
-
-    // Don't automatically attempt to play the video
-    // This avoids the autoplay error
+  
+    // Actually call the function
+    attemptAutoplay()
   }, [])
 
   return (
