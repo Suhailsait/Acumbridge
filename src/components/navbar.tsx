@@ -69,7 +69,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-bold text-sky-600">Acumbridge</span>
+          <span className="text-2xl font-bold text-sky-600">Acumenbridge</span>
         </Link>
 
         {/* Desktop Navigation */}

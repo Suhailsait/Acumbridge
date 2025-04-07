@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">acumbridge</h3>
+            <h3 className="text-xl font-bold mb-4">acumenbridge</h3>
             <p className="text-gray-400 mb-6">Revolutionizing security with AI-powered smart surveillance solutions.</p>
             <div className="flex space-x-4">
               <Link to="/" className="text-gray-400 hover:text-sky-400 transition-colors duration-300">
@@ -100,7 +100,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-sky-400 mr-3" />
-                <span className="text-gray-400">info@acumbridge.com</span>
+                <span className="text-gray-400">info@acumenbridge.com</span>
               </li>
             </ul>
           </div>
@@ -109,7 +109,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} acumbridge. All rights reserved.
+              &copy; {new Date().getFullYear()} acumenbridge. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link to="/" className="text-gray-500 hover:text-sky-400 text-sm transition-colors duration-300">
